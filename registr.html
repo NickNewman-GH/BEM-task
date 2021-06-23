@@ -1,70 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>УУПС</title>
-<link rel="stylesheet" href="registr.css" type="text/css" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>УУПС</title>
+	<link rel="stylesheet" href="registr.css" type="text/css" />
 </head>
 <body>
-<div id="basic">
-<div id="head-site">
-<center><i style="font-size: 30px; color: burlywood">Институт удаленных профессий современности</i></center>
-</div>
-<div id="menu-top">
-<div class="bg-1">
-<ul>
-<li><a href="главная.html">Главная</a></li>
-<li><a href="prof.html">Профессии</a></li>
-<li><a href="eks.html">Эксперты</a></li>
-<li><a href="tarif.html">Тарифы</a></li>
-<li><a href="registr.html">Регистрация</a></li> 
-</ul>
-</div>
-<div class="logo">
-<h1><a id="logo" href="главная.html" title="">
-<center><img class="grid" src="images/photo.png" alt=""/></center>
-</a>
-</h1>
-</div>
+	<div class="container">
 
-<div class="bg-2"></div>
-</div>
+		<div class="site-top">
+			<i>Институт удаленных профессий современности</i>
+		</div>
 
-<form method="get" action="my.ru">
-<table><br>
-<caption><i> Заполните данные для регистрации </i></caption>
-<tr>
-<td><input type="text" placeholder = "Введите имя" required> </td>
-</tr>
-<tr> 
-<td><input type="text" list="pol"name="pol" placeholder = "Введите пол" required> 
-<datalist id="pol">
-<option value="Женщина"></option>
-<option value="Мужчина"></option>
-</datalist></td>
-</tr>
-<tr>
-<td><input type="email" name="email" placeholder = "Имя тарифа" required></td>
-</tr>
-<tr>
-<td><input type="email" name="email" placeholder = "Введите Email" required></td>
-</tr>
-<tr>
-<td><input type="tel" name="tel" placeholder = "Введите номер телефона" required></td>
-</tr>
-<tr>
-<td> <label for="country">Страна</label><br><br>
-<select name="country">
-<option>Выберите страну проживания</option>
-<option value="Россия">Россия</option> 
-<option value="Украина">Америка</option> 
-<option value="Беларусь">Беларусь</option> 
-<option value="Беларусь">Украина</option> 
-</select> 
-</tr> 
-<tr>
-<td><button type="submit">Отправить</button></td>
-</td> 
-</form>
+		<div class="menu">
+			<div class="menu__list">
+				<ul class="menu__list-ul">
+					<li class="menu__list-li"><a class="link" href="главная.html">Главная</a></li>
+					<li class="menu__list-li"><a class="link" href="prof.html">Профессии</a></li>
+					<li class="menu__list-li"><a class="link" href="eks.html">Эксперты</a></li>
+					<li class="menu__list-li"><a class="link" href="tarif.html">Тарифы</a></li>
+					<li class="menu__list-li"><a class="link" href="registr.html">Регистрация</a></li>
+				</ul>
+			</div>
+			<div class="logo">
+				<h1>
+					<a href="главная.html">
+						<img class="logo__img" src="images/photo.png"/>
+					</a>
+				</h1>
+			</div>
+			<div class="separating-line"></div>
+		</div>
+
+		<form class="reg-form" method="get" action="my.ru">
+			<table class="reg-form__table">
+				<caption class="reg-form__table-caption">
+					<i>Заполните данные для регистрации</i>
+				</caption>
+				<tr>
+					<td><input type="text" placeholder = "Введите имя" required> </td>
+				</tr>
+				<tr> 
+					<td>
+						<input type="text" list="pol" name="pol" placeholder="Введите пол" required> 
+						<datalist id="pol">
+							<option value="Женщина"></option>
+							<option value="Мужчина"></option>
+						</datalist>
+					</td>
+				</tr>
+				<tr>
+					<td><input type="email" name="email" placeholder = "Имя тарифа" required></td>
+				</tr>
+				<tr>
+					<td><input type="email" name="email" placeholder = "Введите Email" required></td>
+				</tr>
+				<tr>
+					<td><input type="tel" name="tel" placeholder = "Введите номер телефона" required></td>
+				</tr>
+				<tr>
+					<td>
+						<p class="reg-form__table-select-label">Страна</p>
+						<select name="country" id="country-select">
+							<option>Выберите страну проживания</option>
+							<option value="Россия">Россия</option>
+							<option value="Украина">Америка</option>
+							<option value="Беларусь">Беларусь</option>
+							<option value="Беларусь">Украина</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button type="submit">Отправить</button>
+					</td> 
+				</tr>
+			</table>
+		</form>
+
+	</div>
 </body>
 </html>
