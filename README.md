@@ -1,3 +1,3 @@
 "# BEM-task" 
-prof.html
-prof.css
+registr.html
+registr.css
