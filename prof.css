@@ -1,10 +1,11 @@
-body {padding:0px; 
-margin:0;
- background:tan; 
- font-size:14px; 
- font-family:Arial, 
- Sans-serif;
- }
+body 
+{
+	padding:0px; 
+	margin:0;
+	background:tan; 
+	font-size:14px; 
+	font-family:Arial, Sans-serif;
+}
 #basic {
 	width:960px;
 	min-height:500px; 
